@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadli portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+    <!-- checkbox buat menu hp & ganti tema (disembunyikan lewat css) -->
+    <input type="checkbox" id="menu" class="cek">
+    <input type="checkbox" id="tema" class="cek">
+
+    <header class="header">
+        <div class="container nav-wrap">
+            <a href="#home" class="logo">Fadli</a>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang saya</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+
+            <div class="kanan">
+                <label for="tema" class="icon-btn" title="Ganti tema">
+                    <i class='bx bx-sun ikon-sun'></i>
+                    <i class='bx bx-moon ikon-bulan'></i>
+                </label>
+                <label for="menu" class="icon-btn menu-btn"><i class='bx bx-menu'></i></label>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container home-wrap">
+            <div class="home-text">
+                <p class="sapa">Hai, aku</p>
+                <h1>Muhammad Fadli</h1>
+                <h3>Aku seorang <span class="ketik">Mobile Developer</span></h3>
+                <p class="desk">Mahasiswa D3 Teknik Komputer di Universitas Harkat Negeri Kota Tegal.</p>
+
+                <div class="tombol">
+                    <a href="#about" class="btn">Tentang aku</a>
+                    <a href="#contact" class="btn btn-garis">Hubungi aku</a>
+                </div>
+
+                <div class="sosmed">
+                    <a href="https://facebook.com/username" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://instagram.com/username" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/username" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://linkedin.com/in/username" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+
+            <div class="home-foto">
+                <img src="Artboard%2014.png" alt="Foto Muhammad Fadli">
+            </div>
+        </div>
+    </section>
+
+    <section class="about muncul" id="about">
+        <div class="container">
+            <h2 class="judul">Tentang <span>Saya</span></h2>
+            <p>
+                Aku kuliah D3 Teknik Komputer dan lagi fokus belajar bikin aplikasi mobile,
+                terutama pakai Flutter. Sebelumnya aku sudah biasa bikin website, jadi
+                lumayan paham sisi backend dan tampilan.
+            </p>
+            <p>
+                Di kampus aku juga aktif di DPM sebagai Wakil Kepala Bidang Komisi IV.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills muncul" id="skills">
+        <div class="container">
+            <h2 class="judul">Skills <span>Mobile Dev</span></h2>
+
+            <div class="skill-list">
+                <div class="skill">
+                    <i class="devicon-flutter-plain colored"></i>
+                    <p>Flutter</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-dart-plain colored"></i>
+                    <p>Dart</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-android-plain colored"></i>
+                    <p>Android</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-kotlin-plain colored"></i>
+                    <p>Kotlin</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-firebase-plain colored"></i>
+                    <p>Firebase</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-git-plain colored"></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-react-original colored"></i>
+                    <p>React Native</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-swift-plain colored"></i>
+                    <p>Swift</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-java-plain colored"></i>
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio muncul" id="portfolio">
+        <div class="container">
+            <h2 class="judul">Portofolio</h2>
+
+            <div class="project-list">
+                <div class="project">
+    <i class='bx bx-wallet'></i>
+    <h4>Pencatat Keuangan</h4>
+    <p>Aplikasi buat nyatet uang masuk dan keluar.</p>
+    <a href="https://catatan-keuangan-ashen-sigma.vercel.app/" target="_blank" rel="noopener" class="btn">Lihat</a>
+</div>
+                <div class="project">
+    <i class='bx bx-wallet'></i>
+    <h4>Portofolio</h4>
+    <p>Portofolio By React js.</p>
+    <a href="https://fadlimuhammmad.vercel.app/" target="_blank" rel="noopener" class="btn">Lihat</a>
+</div>
+                <div class="project">
+    <i class='bx bx-wallet'></i>
+    <h4>Sistem Informasi Rumah Sakit</h4>
+    <p>Sistem untuk mengelola data pasien dan rawat inap.</p>
+    <a href="https://sirmt.vercel.app/" target="_blank" rel="noopener" class="btn">Lihat</a>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact muncul" id="contact">
+        <div class="container">
+            <h2 class="judul">Kontak</h2>
+
+            <!-- ganti emailkamu@gmail.com dengan email asli -->
+            <form class="form" action="mailto:emailkamu@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="nama" placeholder="Nama" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea rows="5" name="pesan" placeholder="Pesan" required></textarea>
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Muhammad Fadli</p>
+    </footer>
+
+    <a href="#home" class="ke-atas" title="Ke atas"><i class='bx bx-chevron-up'></i></a>
+
+</body>
+</html>
